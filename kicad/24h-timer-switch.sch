@@ -167,30 +167,17 @@ F 3 "" H 2200 3300 50  0001 C CNN
 	1    2200 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 2950 2200 3100
 $Comp
 L Device:CP C1
 U 1 1 61A472D0
-P 2700 2850
-F 0 "C1" H 2818 2896 50  0000 L CNN
-F 1 "22uF tantalum" H 2818 2805 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2738 2700 50  0001 C CNN
-F 3 "~" H 2700 2850 50  0001 C CNN
-	1    2700 2850
+P 1400 3300
+F 0 "C1" H 1518 3346 50  0000 L CNN
+F 1 "22uF tantalum" H 1518 3255 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1438 3150 50  0001 C CNN
+F 3 "~" H 1400 3300 50  0001 C CNN
+	1    1400 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 2650 2700 2650
-Wire Wire Line
-	2700 2650 2700 2700
-Wire Wire Line
-	2700 3000 2700 3100
-Wire Wire Line
-	2700 3100 2200 3100
-Wire Wire Line
-	2200 3100 2200 3300
-Connection ~ 2200 3100
 $Comp
 L power:VDC #PWR02
 U 1 1 61A49E59
@@ -215,13 +202,10 @@ F 3 "" H 3500 1150 50  0001 C CNN
 	1    3500 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 2650 2900 2650
-Connection ~ 2700 2650
 Text GLabel 2900 2650 2    50   Input ~ 0
-VCC
-Text GLabel 4350 2750 1    50   Input ~ 0
-VCC
+V_OUT
+Text GLabel 7150 1550 0    50   Input ~ 0
+V_OUT
 $Comp
 L Device:R_US R1
 U 1 1 61A4FF45
@@ -376,4 +360,50 @@ Wire Wire Line
 	7000 3700 7000 3650
 Wire Wire Line
 	7000 3650 6950 3650
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 61A4A1CB
+P 7550 1450
+F 0 "J3" H 7630 1492 50  0000 L CNN
+F 1 "Conn_01x03" H 7630 1401 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7550 1450 50  0001 C CNN
+F 3 "~" H 7550 1450 50  0001 C CNN
+	1    7550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1550 7350 1550
+Text GLabel 7150 1350 0    50   Input ~ 0
+V_IN
+Wire Wire Line
+	7150 1350 7350 1350
+Text GLabel 4350 2550 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	4350 2550 4350 2750
+Text GLabel 7150 1450 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	7150 1450 7350 1450
+Wire Wire Line
+	2200 2950 2200 3300
+Wire Wire Line
+	2900 2650 2500 2650
+$Comp
+L power:GND #PWR?
+U 1 1 61A6F596
+P 1400 3550
+F 0 "#PWR?" H 1400 3300 50  0001 C CNN
+F 1 "GND" H 1405 3377 50  0000 C CNN
+F 2 "" H 1400 3550 50  0001 C CNN
+F 3 "" H 1400 3550 50  0001 C CNN
+	1    1400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3450 1400 3550
+Text GLabel 1400 3000 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	1400 3000 1400 3150
 $EndSCHEMATC

@@ -40,7 +40,7 @@ L Transistor_FET:FDS4559 Q1
 U 2 1 61A2EE27
 P 6900 3150
 F 0 "Q1" H 7105 3196 50  0000 L CNN
-F 1 "FDS4559" H 7105 3105 50  0000 L CNN
+F 1 "AO4620" H 7105 3105 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7100 3075 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 7000 3150 50  0001 L CNN
 	2    6900 3150
@@ -51,7 +51,7 @@ L Transistor_FET:FDS4559 Q1
 U 1 1 61A30ED2
 P 3900 1350
 F 0 "Q1" V 4242 1350 50  0000 C CNN
-F 1 "FDS4559" V 4151 1350 50  0000 C CNN
+F 1 "AO4620" V 4151 1350 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 1275 50  0001 L CNN
 F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 4000 1350 50  0001 L CNN
 	1    3900 1350
@@ -219,9 +219,9 @@ Wire Wire Line
 	2700 2650 2900 2650
 Connection ~ 2700 2650
 Text GLabel 2900 2650 2    50   Input ~ 0
-VCC
-Text GLabel 4350 2750 1    50   Input ~ 0
-VCC
+V_OUT
+Text GLabel 7150 1550 0    50   Input ~ 0
+V_OUT
 $Comp
 L Device:R_US R1
 U 1 1 61A4FF45
@@ -376,4 +376,29 @@ Wire Wire Line
 	7000 3700 7000 3650
 Wire Wire Line
 	7000 3650 6950 3650
+$Comp
+L Connector_Generic:Conn_01x03 J3
+U 1 1 61A4A1CB
+P 7550 1450
+F 0 "J3" H 7630 1492 50  0000 L CNN
+F 1 "Conn_01x03" H 7630 1401 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7550 1450 50  0001 C CNN
+F 3 "~" H 7550 1450 50  0001 C CNN
+	1    7550 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1550 7350 1550
+Text GLabel 7150 1350 0    50   Input ~ 0
+V_IN
+Wire Wire Line
+	7150 1350 7350 1350
+Text GLabel 4350 2550 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	4350 2550 4350 2750
+Text GLabel 7150 1450 0    50   Input ~ 0
+VCC
+Wire Wire Line
+	7150 1450 7350 1450
 $EndSCHEMATC
