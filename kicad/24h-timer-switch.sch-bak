@@ -38,24 +38,24 @@ $EndComp
 $Comp
 L Transistor_FET:FDS4559 Q1
 U 2 1 61A2EE27
-P 6900 3150
-F 0 "Q1" H 7105 3196 50  0000 L CNN
-F 1 "FDS4559" H 7105 3105 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7100 3075 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 7000 3150 50  0001 L CNN
-	2    6900 3150
-	1    0    0    -1  
+P 3900 1350
+F 0 "Q1" H 4105 1396 50  0000 L CNN
+F 1 "AO4620" H 4105 1305 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 1275 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 4000 1350 50  0001 L CNN
+	2    3900 1350
+	0    1    -1   0   
 $EndComp
 $Comp
 L Transistor_FET:FDS4559 Q1
 U 1 1 61A30ED2
-P 3900 1350
-F 0 "Q1" V 4242 1350 50  0000 C CNN
-F 1 "FDS4559" V 4151 1350 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4100 1275 50  0001 L CNN
-F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 4000 1350 50  0001 L CNN
-	1    3900 1350
-	0    -1   -1   0   
+P 6900 3150
+F 0 "Q1" V 7242 3150 50  0000 C CNN
+F 1 "AO4620" V 7151 3150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7100 3075 50  0001 L CNN
+F 3 "https://www.onsemi.com/pub/Collateral/FDS4559-D.PDF" H 7000 3150 50  0001 L CNN
+	1    6900 3150
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
@@ -93,12 +93,12 @@ $EndComp
 $Comp
 L Connector:Barrel_Jack J1
 U 1 1 61A3AC29
-P 6650 3550
-F 0 "J1" H 6707 3875 50  0000 C CNN
-F 1 "Barrel_Jack" H 6707 3784 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 6700 3510 50  0001 C CNN
-F 3 "~" H 6700 3510 50  0001 C CNN
-	1    6650 3550
+P 6700 2700
+F 0 "J1" H 6757 3025 50  0000 C CNN
+F 1 "Barrel_Jack" H 6757 2934 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 6750 2660 50  0001 C CNN
+F 3 "~" H 6750 2660 50  0001 C CNN
+	1    6700 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -120,17 +120,6 @@ Wire Wire Line
 	2450 1400 2450 1350
 Wire Wire Line
 	2450 1350 2300 1350
-$Comp
-L power:GND #PWR010
-U 1 1 61A3FEB1
-P 7000 3700
-F 0 "#PWR010" H 7000 3450 50  0001 C CNN
-F 1 "GND" H 7005 3527 50  0000 C CNN
-F 2 "" H 7000 3700 50  0001 C CNN
-F 3 "" H 7000 3700 50  0001 C CNN
-	1    7000 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 1150 3500 1250
 Wire Wire Line
@@ -238,18 +227,18 @@ Wire Wire Line
 $Comp
 L power:VDC #PWR09
 U 1 1 61A51849
-P 7000 2800
-F 0 "#PWR09" H 7000 2700 50  0001 C CNN
-F 1 "VDC" H 7015 2973 50  0000 C CNN
-F 2 "" H 7000 2800 50  0001 C CNN
-F 3 "" H 7000 2800 50  0001 C CNN
-	1    7000 2800
+P 7000 2250
+F 0 "#PWR09" H 7000 2150 50  0001 C CNN
+F 1 "VDC" H 7015 2423 50  0000 C CNN
+F 2 "" H 7000 2250 50  0001 C CNN
+F 3 "" H 7000 2250 50  0001 C CNN
+	1    7000 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7000 2800 7000 2950
 Wire Wire Line
-	5450 3150 6700 3150
+	5450 3150 6550 3150
 $Comp
 L Device:R_US R2
 U 1 1 61A565FD
@@ -369,11 +358,35 @@ F 3 "~" H 2100 1350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
+	7000 2250 7000 2600
+Wire Wire Line
 	7000 3350 7000 3450
+$Comp
+L power:GND #PWR010
+U 1 1 61A3FEB1
+P 7000 3450
+F 0 "#PWR010" H 7000 3200 50  0001 C CNN
+F 1 "GND" H 7005 3277 50  0000 C CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "" H 7000 3450 50  0001 C CNN
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 61C064DB
+P 6550 3300
+F 0 "R4" V 6345 3300 50  0000 C CNN
+F 1 "10k" V 6436 3300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 6590 3290 50  0001 C CNN
+F 3 "~" H 6550 3300 50  0001 C CNN
+	1    6550 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6550 3150
 Wire Wire Line
-	7000 3450 6950 3450
+	6550 3150 6700 3150
 Wire Wire Line
-	7000 3700 7000 3650
-Wire Wire Line
-	7000 3650 6950 3650
+	6550 3450 7000 3450
+Connection ~ 7000 3450
 $EndSCHEMATC
