@@ -16,7 +16,7 @@
 
   (layers
     (0 Front signal)
-    (31 Back signal hide)
+    (31 Back signal)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
@@ -1011,10 +1011,10 @@
   (segment (start 130.1877 88.3031) (end 125.4506 93.0402) (width 0.508) (layer Back) (net 8))
   (segment (start 130.1877 87.503) (end 130.1877 88.3031) (width 0.508) (layer Back) (net 8))
   (segment (start 141.9606 71.0438) (end 148.4606 71.0438) (width 0.508) (layer Back) (net 9))
-  (segment (start 123.1138 82.8548) (end 122.9106 93.0402) (width 0.508) (layer Back) (net 9))
-  (segment (start 124.4092 81.6356) (end 123.1138 82.8548) (width 0.508) (layer Back) (net 9))
-  (segment (start 139.4968 81.7118) (end 124.4092 81.6356) (width 0.508) (layer Back) (net 9))
+  (segment (start 122.936 82.8548) (end 122.9106 93.0402) (width 0.508) (layer Back) (net 9))
   (segment (start 144.1958 76.1746) (end 139.4968 81.7118) (width 0.508) (layer Back) (net 9))
+  (segment (start 125.1458 81.7118) (end 122.936 82.8548) (width 0.508) (layer Back) (net 9))
+  (segment (start 139.4968 81.7118) (end 125.1458 81.7118) (width 0.508) (layer Back) (net 9))
   (segment (start 144.1958 71.0438) (end 144.1958 76.1746) (width 0.508) (layer Back) (net 9))
   (segment (start 141.9606 71.0438) (end 144.1958 71.0438) (width 0.508) (layer Back) (net 9))
   (segment (start 144.145 90.5256) (end 144.1958 90.5764) (width 0.508) (layer Front) (net 10))
